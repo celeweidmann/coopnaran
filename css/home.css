@@ -1,0 +1,9 @@
+/* line 1, ../sass/home.sass */
+.logo {
+  width: 200px;
+}
+
+/* line 4, ../sass/home.sass */
+.navbar-default {
+  background-color: #1d4165;
+}
