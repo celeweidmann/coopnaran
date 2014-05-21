@@ -1,32 +1,84 @@
 @font-face 
-	font-family: "claire"
-	src: url(/fonts/ClaireHandRegular.otf) format("opentype")
+	font-family: "hotel"
+	src: url(/fonts/GrandHotel-Regular.ttf) format("truetype")
+
+@font-face
 	font-family: "rawe"
 	src: url(/fonts/RawengulkDemibold.otf) format("opentype")
+
+@font-face
+	font-family: "urw"
+	src: url(/fonts/urw_gothic_l_book.ttf) format("truetype")
+
+$naranja: #F9B52C
 
 body
 	background-color: #f9b52c
 
+h1
+	font-family: urw
+	font-size: 2em
+	text-transform: uppercase
+
 small
 	font:
-		family: rawe
-		size: 0.9em
+		family: 'urw'
+		size: 0.8em
 	color: #1d4165
+
+.banner
+	padding-top: 20px
 
 .burbuja
 	margin-top: -160px
 
+.carousel-caption
+	background-color: yellow
+
 .carousel-control
 	width: 0
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img
+	//height: 450px
+
+.carousel-control .glyphicon-chevron-left, 
+.carousel-control .glyphicon-chevron-right, 
+.carousel-control .icon-prev, 
+.carousel-control .icon-next
+	font-size: 20px
+
+.contactanos-titulo
+	padding-bottom: 10px
 
 .fa
 	color: #1d4165
 
-.img-producto
-	height: 450px
+.galeria
+	padding-top: 20px
 
-.carousel-inner > .item > img, .carousel-inner > .item > a > img
-	height: 450px
+.historia
+	color: #FFFFFF
+	padding-top: 10px
+
+.historia-marco
+	background-color: rgba(30,65,101,0.5)
+	padding:
+		left: 30px
+		right: 30px
+		bottom: 20px
+
+.historia-resalta
+	color: #f9b52c
+	
+.historia-titulo
+	padding-bottom: 10px
+
+.imagen-todos
+	border: solid 2px white
+	margin-top: 15px
+
+.img-producto
+	height: 450px !important
 
 .logo
 	width: 200px
@@ -39,28 +91,18 @@ small
 .navbar-default
 	background-color: #1d4165
 	border: none
-	font-family: claire
+	font-family: urw
+	//font-size: 1em
 	height: 40px
 	//margin-top: 50px
 	padding:
 		left: 150px
 		right: 150px
-
-h1
-	font-family: claire
-
-.historia
-	color: #FFFFFF
-
-.historia-marco
-	background-color: rgba(30,65,101,0.5)
-	padding:
-		left: 30px
-		right: 30px
-		bottom: 20px
-
-.historia-resalta
-	color: #f9b52c
+	text-transform: uppercase
+	background: -webkit-linear-gradient(left, #1D4165, #050E2D) /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #1D4165, #050E2D) /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #1D4165, #050E2D) /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #1D4165, #050E2D) /* Standard syntax (must be last) */
 
 .navbar-nav
 	//margin-top: 10px
@@ -69,6 +111,11 @@ h1
 	padding:
 		bottom: 10px
 		top: 10px
+
+.nav > li > a
+	padding:
+		left: 8px
+		right: 8px
 
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-nav > li > a:hover,
@@ -80,40 +127,88 @@ h1
 .navbar-default .navbar-nav > .active > a:focus
 	color: #FFFFFF
 	background-color: transparent
+
+.parallax-contacto
+	height: 550px
+	background-position: center top
+	background-repeat: no-repeat
+	background-attachment: fixed
+	background-image: url('../img/burbujas4.png')
 	
+.parallax-historia
+	height: 650px
+	background-position: center top
+	background-repeat: no-repeat
+	background-attachment: fixed
+	background-image: url('../img/burbujas3.png')
+	
+.parallax-productos
+	height: 850px
+	background-position: center top
+	background-repeat: no-repeat
+	background-attachment: fixed
+	background-image: url('../img/burbujas2.png')
+	
+.parallax-video
+	height: 650px
+	background-position: center top
+	background-repeat: no-repeat
+	background-attachment: fixed
+	background-image: url('../img/burbujas1.png')
+	
+.pequenia
+	height: 65px
+	width: auto
+
 .separador
-	border-top: solid
+	border-top: solid 1px
 	border-color: #f9b52c
 	padding:
 		bottom: 20px
 		top: 20px
-	
-#video
-	background-color: #f9b52c
-	margin:
-		bottom: 70px
-		top: 70px
-	padding:
-		bottom: 30px
-		top: 30px
-	
-#productos
-	background-color: #eaf5f7
-	color: #1d4165
-	padding:
-		bottom: 100px
-		top: 80px
-	
-#historia
-	background-color: #1f5285
-	color: #eaf5f7
-	padding:
-		bottom: 100px
-		top: 50px
-	
+
+.titulo
+	height: 48px
+
+.video
+	border:
+		bottom: solid 7px $naranja
+		top: solid 7px $naranja
+		left: solid 9px $naranja
+		right: solid 9px $naranja	
+
 #contacto
 	background-color: #eaf5f7
 	color: #1d4165
 	padding:
 		bottom: 50px
-		top: -20px
+		top: 90px
+
+#historia
+	background-color: #1f5285
+	color: #eaf5f7
+	padding:
+		bottom: 100px
+		top: 140px
+
+#productos
+	background-color: #f9b52c
+	color: #1d4165
+	padding:
+		bottom: 100px
+		top: 90px
+	position: relative
+	margin: 0 auto
+	min-height: 800px
+
+#productos article
+	position: absolute
+
+#video
+	//background-color: #f9b52c
+	background-color: #eaf5f7
+	margin:
+		top: 40px
+	padding:
+		bottom: 50px
+		top: 120px

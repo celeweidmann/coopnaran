@@ -1,80 +1,87 @@
 @font-face {
-  font-family: "claire";
-  src: url(/fonts/ClaireHandRegular.otf) format("opentype");
+  font-family: "hotel";
+  src: url(/fonts/GrandHotel-Regular.ttf) format("truetype");
+}
+
+@font-face {
   font-family: "rawe";
   src: url(/fonts/RawengulkDemibold.otf) format("opentype");
 }
 
-/* line 7, ../sass/home.sass */
+@font-face {
+  font-family: "urw";
+  src: url(/fonts/urw_gothic_l_book.ttf) format("truetype");
+}
+
+/* line 15, ../sass/home.sass */
 body {
   background-color: #f9b52c;
 }
 
-/* line 10, ../sass/home.sass */
+/* line 18, ../sass/home.sass */
+h1 {
+  font-family: urw;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+/* line 23, ../sass/home.sass */
 small {
-  font-family: rawe;
-  font-size: 0.9em;
+  font-family: "urw";
+  font-size: 0.8em;
   color: #1d4165;
 }
 
-/* line 16, ../sass/home.sass */
+/* line 29, ../sass/home.sass */
+.banner {
+  padding-top: 20px;
+}
+
+/* line 32, ../sass/home.sass */
 .burbuja {
   margin-top: -160px;
 }
 
-/* line 19, ../sass/home.sass */
+/* line 35, ../sass/home.sass */
+.carousel-caption {
+  background-color: yellow;
+}
+
+/* line 38, ../sass/home.sass */
 .carousel-control {
   width: 0;
 }
 
-/* line 22, ../sass/home.sass */
+/* line 44, ../sass/home.sass */
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  font-size: 20px;
+}
+
+/* line 50, ../sass/home.sass */
+.contactanos-titulo {
+  padding-bottom: 10px;
+}
+
+/* line 53, ../sass/home.sass */
 .fa {
   color: #1d4165;
 }
 
-/* line 25, ../sass/home.sass */
-.img-producto {
-  height: 450px;
+/* line 56, ../sass/home.sass */
+.galeria {
+  padding-top: 20px;
 }
 
-/* line 28, ../sass/home.sass */
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-  height: 450px;
-}
-
-/* line 31, ../sass/home.sass */
-.logo {
-  width: 200px;
-  margin-top: 2px;
-}
-
-/* line 35, ../sass/home.sass */
-.navbar {
-  height: 40px;
-  min-height: 40px;
-}
-
-/* line 39, ../sass/home.sass */
-.navbar-default {
-  background-color: #1d4165;
-  border: none;
-  font-family: claire;
-  height: 40px;
-  padding-left: 150px;
-  padding-right: 150px;
-}
-
-/* line 49, ../sass/home.sass */
-h1 {
-  font-family: claire;
-}
-
-/* line 52, ../sass/home.sass */
+/* line 59, ../sass/home.sass */
 .historia {
   color: white;
+  padding-top: 10px;
 }
 
-/* line 55, ../sass/home.sass */
+/* line 63, ../sass/home.sass */
 .historia-marco {
   background-color: rgba(30, 65, 101, 0.5);
   padding-left: 30px;
@@ -82,25 +89,74 @@ h1 {
   padding-bottom: 20px;
 }
 
-/* line 62, ../sass/home.sass */
+/* line 70, ../sass/home.sass */
 .historia-resalta {
   color: #f9b52c;
 }
 
-/* line 68, ../sass/home.sass */
+/* line 73, ../sass/home.sass */
+.historia-titulo {
+  padding-bottom: 10px;
+}
+
+/* line 76, ../sass/home.sass */
+.imagen-todos {
+  border: solid 2px white;
+  margin-top: 15px;
+}
+
+/* line 80, ../sass/home.sass */
+.img-producto {
+  height: 450px !important;
+}
+
+/* line 83, ../sass/home.sass */
+.logo {
+  width: 200px;
+  margin-top: 2px;
+}
+
+/* line 87, ../sass/home.sass */
+.navbar {
+  height: 40px;
+  min-height: 40px;
+}
+
+/* line 91, ../sass/home.sass */
+.navbar-default {
+  background-color: #1d4165;
+  border: none;
+  font-family: urw;
+  height: 40px;
+  padding-left: 150px;
+  padding-right: 150px;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(left, #1d4165, #050e2d);
+  background: -o-linear-gradient(right, #1d4165, #050e2d);
+  background: -moz-linear-gradient(right, #1d4165, #050e2d);
+  background: linear-gradient(to right, #1d4165, #050e2d);
+}
+
+/* line 110, ../sass/home.sass */
 .navbar-nav > li > a {
   padding-bottom: 10px;
   padding-top: 10px;
 }
 
-/* line 73, ../sass/home.sass */
+/* line 115, ../sass/home.sass */
+.nav > li > a {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* line 120, ../sass/home.sass */
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: white;
 }
 
-/* line 78, ../sass/home.sass */
+/* line 125, ../sass/home.sass */
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -108,43 +164,105 @@ h1 {
   background-color: transparent;
 }
 
-/* line 84, ../sass/home.sass */
+/* line 131, ../sass/home.sass */
+.parallax-contacto {
+  height: 550px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("../img/burbujas4.png");
+}
+
+/* line 138, ../sass/home.sass */
+.parallax-historia {
+  height: 650px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("../img/burbujas3.png");
+}
+
+/* line 145, ../sass/home.sass */
+.parallax-productos {
+  height: 850px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("../img/burbujas2.png");
+}
+
+/* line 152, ../sass/home.sass */
+.parallax-video {
+  height: 650px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("../img/burbujas1.png");
+}
+
+/* line 159, ../sass/home.sass */
+.pequenia {
+  height: 65px;
+  width: auto;
+}
+
+/* line 163, ../sass/home.sass */
 .separador {
-  border-top: solid;
+  border-top: solid 1px;
   border-color: #f9b52c;
   padding-bottom: 20px;
   padding-top: 20px;
 }
 
-/* line 91, ../sass/home.sass */
-#video {
-  background-color: #f9b52c;
-  margin-bottom: 70px;
-  margin-top: 70px;
-  padding-bottom: 30px;
-  padding-top: 30px;
+/* line 170, ../sass/home.sass */
+.titulo {
+  height: 48px;
 }
 
-/* line 100, ../sass/home.sass */
-#productos {
-  background-color: #eaf5f7;
-  color: #1d4165;
-  padding-bottom: 100px;
-  padding-top: 80px;
+/* line 173, ../sass/home.sass */
+.video {
+  border-bottom: solid 7px #f9b52c;
+  border-top: solid 7px #f9b52c;
+  border-left: solid 9px #f9b52c;
+  border-right: solid 9px #f9b52c;
 }
 
-/* line 107, ../sass/home.sass */
-#historia {
-  background-color: #1f5285;
-  color: #eaf5f7;
-  padding-bottom: 100px;
-  padding-top: 50px;
-}
-
-/* line 114, ../sass/home.sass */
+/* line 180, ../sass/home.sass */
 #contacto {
   background-color: #eaf5f7;
   color: #1d4165;
   padding-bottom: 50px;
-  padding-top: -20px;
+  padding-top: 90px;
+}
+
+/* line 187, ../sass/home.sass */
+#historia {
+  background-color: #1f5285;
+  color: #eaf5f7;
+  padding-bottom: 100px;
+  padding-top: 140px;
+}
+
+/* line 194, ../sass/home.sass */
+#productos {
+  background-color: #f9b52c;
+  color: #1d4165;
+  padding-bottom: 100px;
+  padding-top: 90px;
+  position: relative;
+  margin: 0 auto;
+  min-height: 800px;
+}
+
+/* line 204, ../sass/home.sass */
+#productos article {
+  position: absolute;
+}
+
+/* line 207, ../sass/home.sass */
+#video {
+  background-color: #eaf5f7;
+  margin-top: 40px;
+  padding-bottom: 50px;
+  padding-top: 120px;
 }
